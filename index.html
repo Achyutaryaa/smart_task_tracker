@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Task Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-container">
+        <h1>Smart Task Tracker</h1>
+        <p class="subtitle">plan, track, and stay productive!</p>
+        <form id="task-form">
+            <input type="text" id="task-input" placeholder="Enter your task">
+            <select id="task-category">
+                <option value="Work">Work</option>
+                <option value="Personal">Personal</option>
+                <option value="Study">Study</option>
+            </select>
+            <button type="submit">Add Task</button>
+        </form>
+        <p id="message" class="message"></p>
+        <div class="filter">
+            <label for="filter-category">Filter:</label>
+            <select id="filter-category">
+                <option value="All">All</option>
+                <option value="Work">Work</option>
+                <option value="Personal">Personal</option>
+                <option value="Study">Study</option>
+            </select>
+        </div>
+        <ul id="task-list" class="task-list"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
